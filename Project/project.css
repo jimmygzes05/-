@@ -1,0 +1,25 @@
+body{
+    background-image: url("./img/background.jpg");
+}
+
+.game {
+    display: inline-block;
+}
+
+#scoreArea {
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 400px;
+}
+
+#myCanvas {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 119, 255, 0.61);
+    margin-left: 20%;
+
+}
