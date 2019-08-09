@@ -1,9 +1,6 @@
 let preTime = 2000;
 let score = 0;
-let time = 0;
-let judgeTime = 500;
-let judgeNew = 0;
-let judgeType = 0;
+
 //下落物體的厚度
 let noteThick = 40;
 //按鍵燈光
@@ -47,11 +44,8 @@ function startTime() {
 
 
 function hitEvent(combNum) {
-    // if (combNum < 5)
-
     score += 5 - combNum;
-    judgeType = combNum;
-    judgeNew = time + judgeTime;
+    
 }
 //事件:按下鍵盤
 let keyID = 0;
@@ -153,12 +147,6 @@ function drawSpotlight() {
     ctx.restore();
 }
 
-
-function drawJudge() {
-    ctx.save();
-    ctx.font = "bold 90px Arial";
-    ctx.textAlign = "center";
-}
 
 function drawScore() {
     document.getElementById("scoreArea").innerText = score;
